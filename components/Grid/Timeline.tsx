@@ -51,6 +51,7 @@ export const Timeline = ({
     target: containerRef,
     offset: ['-600px', '60%'],
   });
+
   const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
