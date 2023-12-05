@@ -64,7 +64,7 @@ export const Timeline = ({
       className={cnb(styles.alternatingGridWrapper, styles.gridWidths[width])}
       ref={containerRef}
     >
-      <Grid as={as} md={3} py={py} pt={pt} pb={pb} {...props} alignItems='center'>
+      <Grid as={as} md={3} py={py} pt={pt} pb={pb} {...props} alignItems='center' className="z-10">
         {childrenArray?.map((item, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <React.Fragment key={index}>
@@ -82,10 +82,10 @@ export const Timeline = ({
         ))}
       </Grid>
       {addCenterLine && (
-        <>
+        <div className="z-0">
           <div className={styles.centerlineBg} />
           <motion.div className={styles.centerline} style={{ scaleY }} />
-        </>
+        </div>
       )}
     </div>
   );
