@@ -96,10 +96,10 @@ export const gridAlignItems = {
 // Styles for the alternating grid
 export const alternatingGridWrapper = 'relative mx-auto cc';
 
-export const centerlineBg = 'hidden md:block w-2 absolute top-0 left-1/2 -ml-1 h-full origin-top bg-current bg-plum';
-export const centerline = 'hidden md:block w-2 absolute top-0 left-1/2 -ml-1 h-full origin-top bg-current bg-digital-red';
+export const centerlineBg = 'hidden md:block w-2 absolute top-0 left-1/2 -ml-1 h-full origin-top bg-current bg-plum-light';
+export const centerline = 'hidden md:block w-2 absolute top-0 left-1/2 -ml-1 h-full origin-top bg-current bg-digital-red-light';
 
-export const circleWrapper = 'hidden md:block absolute top-0 left-1/2 -ml-1 origin-top';
+export const circleWrapper = 'hidden md:block relative top-0 left-1/2 -ml-1 origin-top';
 export const circle = 'fill-none stroke-2 stroke-black';
 
 export const gridWidths = {

@@ -47,18 +47,10 @@ export const Timeline = ({
 }: TimelineProps) => {
   // turn children into array
   const childrenArray = React.Children.toArray(children);
-  const rowItems = [];
-  for (let i = 0; i < childrenArray.length; i += 2) {
-    if (i + 1 < childrenArray.length) {
-      rowItems.push([childrenArray[i], childrenArray[i + 1]]);
-    } else {
-      rowItems.push([childrenArray[i]]);
-    }
-  }
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ['-600px', '60%'],
+    offset: ['-500px', '60%'],
   });
 
   const scaleY = useSpring(scrollYProgress, {
@@ -72,8 +64,8 @@ export const Timeline = ({
       className={cnb(styles.alternatingGridWrapper, styles.gridWidths[width])}
       ref={containerRef}
     >
-      <Grid as={as} md={3} py={py} pt={pt} pb={pb} {...props}>
-        {rowItems?.map((item, index) => (
+      <Grid as={as} md={3} py={py} pt={pt} pb={pb} {...props} alignItems='center'>
+        {childrenArray?.map((item, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <React.Fragment key={index}>
             <motion.div
@@ -84,41 +76,7 @@ export const Timeline = ({
               )}
               style={gridCellStyle}
             >
-              {item[0]}
-            </motion.div>
-            <div>
-              <motion.figure
-                className={styles.circleWrapper}
-                animate={{
-                  height: 100,
-                  width: 100,
-                }}
-              >
-                <svg
-                  id='timeline-circle'
-                  width='100%'
-                  height='100%'
-                  viewBox='0 0 100 100'
-                >
-                  <circle
-                    cx='50'
-                    cy='50'
-                    r='30'
-                    pathLength='1'
-                    className={styles.circle}
-                  />
-                </svg>
-              </motion.figure>
-            </div>
-            <motion.div
-              className={cnb(
-                marginBottoms[spacing as MarginType] ||
-                  styles.negativeSpacing[spacing as GridNegativeSpacingType],
-                styles.cellWithContent,
-              )}
-              style={gridCellStyle}
-            >
-              {item[1]}
+              {item}
             </motion.div>
           </React.Fragment>
         ))}
