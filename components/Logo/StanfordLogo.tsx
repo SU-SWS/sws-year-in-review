@@ -52,7 +52,7 @@ export const StanfordLogo = ({
   }
 
   return (
-    <div {...rest} className={cnb('logo', color ? styles.logoColors[color] : '', className)}>
+    <div {...rest} className={cnb('logo font-stanford', color ? styles.logoColors[color] : '', className)}>
       {logoText}
     </div>
   );

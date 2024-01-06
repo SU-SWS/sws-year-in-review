@@ -3,7 +3,9 @@ import { cnb } from 'cnbuilder';
 import './globals.css';
 import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
 import localFont from 'next/font/local';
+import { FlexBox } from '@/components/FlexBox';
 import { Masthead } from '@/components/Masthead/Masthead';
+import { GlobalFooter } from '@/components/GlobalFooter';
 
 const source_sans = Source_Sans_3({
   subsets: ['latin'],
@@ -36,10 +38,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={cnb(source_sans.variable, source_serif.variable, stanford.variable, 'bg-black-true text-white')}>
-        <Masthead />
-        {children}
+    <html lang="en" className={cnb(source_sans.variable, source_serif.variable, stanford.variable)}>
+      <body className='bg-black-true text-white'>
+        <FlexBox justifyContent="between" direction="col" className="min-h-screen relative">
+          <Masthead />
+          {children}
+          <footer>
+            <GlobalFooter />
+          </footer>
+        </FlexBox>
       </body>
     </html>
   );
