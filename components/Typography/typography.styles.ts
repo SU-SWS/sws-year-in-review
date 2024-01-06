@@ -21,7 +21,6 @@ export const fontSizes = {
   7: 'type-7',
   8: 'type-8',
   9: 'type-9',
-  hero: 'hero',
 };
 
 // Line heights
@@ -50,7 +49,6 @@ export const textColors = {
 export const textVariants = {
   none: '',
   big: 'big-paragraph',
+  card: 'card-paragraph',
   subheading: 'subheading',
 };
-
-export const iconStyle = 'inline-block shrink-0 w-09em ml-03em -mt-01em';

@@ -9,6 +9,6 @@ type HeadingProps = Omit<TypographyProps, 'as'> & React.HTMLAttributes<HTMLHeadi
 export const Heading = ({
   as = 'h2',
   font = 'serif',
-  weight = font === 'druk' ? 'black' : 'bold',
+  weight = 'bold',
   ...rest
 }: HeadingProps) => <Text {...rest} font={font} weight={weight} as={as} />;
