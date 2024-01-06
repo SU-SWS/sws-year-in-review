@@ -21,6 +21,7 @@ export const fontSizes = {
   7: 'type-7',
   8: 'type-8',
   9: 'type-9',
+
 };
 
 // Line heights
@@ -43,6 +44,7 @@ export const textAligns = {
 export const textColors = {
   default: '', // Interit from the base
   black: 'text-black',
+  'black-50': 'text-black-50',
   white: 'text-white',
 };
 

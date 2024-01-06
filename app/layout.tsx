@@ -37,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cnb(source_sans.variable, source_serif.variable, stanford.variable)}>
+      <body className={cnb(source_sans.variable, source_serif.variable, stanford.variable, 'bg-black-true text-white')}>
         <Masthead />
         {children}
       </body>
