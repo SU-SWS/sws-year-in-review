@@ -1,37 +1,34 @@
-import React, { AllHTMLAttributes } from 'react';
-import { cnb, ClassValue } from 'cnbuilder';
-import { Logo } from '../Logo';
-import { FlexBox } from '../FlexBox/FlexBox';
-import * as styles from './LockUp.styles';
+import React from 'react';
+import { cnb } from 'cnbuilder';
+import { StanfordLogo } from './StanfordLogo';
+import { FlexBox } from '@/components/FlexBox';
+import * as styles from './LogoLockup.styles';
 
 /**
  * Stanford Department Branding Component.
- *
  */
-export type LockUpProps = {
-  className?: ClassValue;
-  color?: 'default' | 'white';
+type LogoLockupProps = {
   text: string;
-  href?: string;
+  isLink?: boolean;
+  color?: 'default' | 'white';
+  className?: string;
 }
 
-type CNBAttributes = Omit<AllHTMLAttributes<any>, 'className'>;
-
-export const LockUp = ({
-  className,
-  color = 'default',
+export const LogoLockup = ({
   text,
-  href,
+  isLink,
+  color = 'default',
+  className,
   ...rest
-}: LockUpProps & CNBAttributes) => {
+}: LogoLockupProps) => {
   const levers: { [key: string]: string } = {};
   levers.textColor = styles.textColor[color];
   levers.bar = styles.barColor[color];
 
   return (
     <div className={cnb(styles.root, className)} {...rest}>
-      <FlexBox alignItems="center">
-        <Logo
+      <FlexBox className={styles.contentWrapper}>
+        <StanfordLogo
           color={color === 'white' ? 'white' : 'cardinal-red'}
           isLink={false}
           className={cnb(styles.logo)}
