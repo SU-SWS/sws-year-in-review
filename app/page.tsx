@@ -1,17 +1,15 @@
 import { Timeline } from '@/components/Grid';
-import { TimelineDate } from '@/components/Grid/TimelineDate';
 import { Heading, Paragraph } from '@/components/Typography';
 
 export default function Home() {
   return (
     <main>
       <h1 className='text-cardinal-red'>Placeholder</h1>
-      <Timeline addCenterLine>
+      <Timeline month='Aug' date='08' addCenterLine>
         <div>
           <Paragraph>Lorem ipsum sit</Paragraph>
           <Heading>Consectetur adipscing elit, sed</Heading>
         </div>
-        <TimelineDate month="Mar" date="04" />
         <div>
           <Heading>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -27,6 +25,8 @@ export default function Home() {
             culpa qui officia deserunt mollit anim id est laborum.
           </Paragraph>
         </div>
+      </Timeline>
+      <Timeline month='Aug' date='08' addCenterLine>
         <div>
           <Heading>Lorem ipsum </Heading>
           <Paragraph>
@@ -48,7 +48,8 @@ export default function Home() {
             culpa qui officia deserunt mollit anim id est laborum.
           </Paragraph>
         </div>
-        <TimelineDate month="Jul" date="11" />
+      </Timeline>
+      <Timeline month='Aug' date='08' addCenterLine>
         <div>
           <Paragraph>Lorem ipsum sit</Paragraph>
           <Heading>Consectetur adipscing elit, sed</Heading>
@@ -68,7 +69,8 @@ export default function Home() {
             culpa qui officia deserunt mollit anim id est laborum.
           </Paragraph>
         </div>
-        <TimelineDate month="Aug" date="08" />
+      </Timeline>
+      <Timeline month='Aug' date='08' addCenterLine>
         <div>
           <Heading>Lorem ipsum </Heading>
           <Paragraph>
