@@ -1,25 +1,12 @@
-import React from 'react';
-import { LockUp } from '../LockUp';
-import { FlexBox } from '../FlexBox';
-import { Link } from '../Link';
+import { LogoLockup } from '@/components/Logo';
 import * as styles from './Masthead.styles';
+import { Container } from '@/components/Container';
 
 export const Masthead = () => {
 
   return (
-    <div>
-      <FlexBox
-        as="header"
-        alignItems="center"
-        justifyContent="between"
-        className={styles.root}
-      >
-        <Link href="/" className={styles.logoLink}>
-          <div className={styles.lockUpWrapper}>
-            <LockUp text="Web Services" />
-          </div>
-        </Link>
-      </FlexBox>
-    </div>
+    <Container pt={5} pb={2} className="bg-black-true w-full">
+      <LogoLockup text="Web Services" color="white" className="text-[3.4rem]" />
+    </Container>
   );
 };
