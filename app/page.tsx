@@ -3,7 +3,7 @@ import { Heading, Paragraph } from '@/components/Typography';
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black text-white">
       <h1 className='text-cardinal-red'>Placeholder</h1>
       <Timeline month='Aug' date='08' addCenterLine>
         <div>
