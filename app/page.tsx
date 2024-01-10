@@ -1,4 +1,4 @@
-import { Heading, Paragraph } from '@/components/Typography';
+import { Heading, Paragraph, Text } from '@/components/Typography';
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <Heading as="h2" size={6} leading="normal" className="rs-mb-2 rs-mt-8">Service in the <span className="bg-teal px-10 rounded">numbers.</span></Heading>
+          <Heading as="h2" size={6} leading="normal" className="rs-mb-2 rs-mt-8">Service in the <Text as="span" bgColor="teal" className="px-10 rounded">numbers.</Text></Heading>
           <div className='h-400'>
             <Paragraph>
               Cards coming soon...

@@ -10,6 +10,7 @@ export type TypographyProps = {
   weight?: types.FontWeightType;
   align?: types.TextAlignType;
   color?: types.TextColorType;
+  bgColor?: types.TextBgColorType;
   variant?: types.TextVariantType;
   leading?: types.FontLeadingType;
   italic?: boolean;
@@ -28,6 +29,7 @@ export const Text = ({
   weight,
   align,
   color = 'default',
+  bgColor = 'default',
   variant,
   leading,
   italic,

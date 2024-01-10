@@ -48,6 +48,14 @@ export const textColors = {
   white: 'text-white',
 };
 
+export const textBgColors = {
+  default: '', // Interit from the base
+  teal: 'bg-teal',
+  purple: 'bg-purple',
+  blue: 'bg-sky-blue-bright',
+  illuminating: 'bg-illuminating',
+};
+
 export const textVariants = {
   none: '',
   big: 'big-paragraph',
