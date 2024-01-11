@@ -48,6 +48,7 @@ export const Text = ({
         weight ? styles.fontWeights[weight] : '',
         align ? styles.textAligns[align] : '',
         color ? styles.textColors[color] : '',
+        bgColor ? styles.textBgColors[bgColor] : '',
         variant ? styles.textVariants[variant] : '',
         leading ? styles.fontLeadings[leading] : '',
         italic ? 'italic' : '',

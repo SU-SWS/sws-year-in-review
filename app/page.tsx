@@ -19,7 +19,7 @@ export default function Home() {
           </Paragraph>
         </div>
         <div className="max-w-prose">
-          <Heading as="h2" size={6} leading="normal" className="rs-mb-2 rs-mt-8 ">Some of our <span className="bg-plum-light text-black-true px-10 rounded">custom</span> highlights.</Heading>
+          <Heading as="h2" size={6} leading="normal" className="rs-mb-2 rs-mt-8 ">Some of our <Text as="span" color="black-true" bgColor='purple' className="px-10 rounded">custom</Text> highlights.</Heading>
           <Paragraph>
             Building websites that fit the custom needs of our clients across
             Stanford, employing Storyblok, Lorem Ipsum, and our very own,
