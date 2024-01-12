@@ -45,6 +45,7 @@ export const textColors = {
   default: '', // Interit from the base
   black: 'text-black',
   'black-true': 'text-black-true',
+  'black-40': 'text-black-40',
   'black-50': 'text-black-50',
   white: 'text-white',
 };
