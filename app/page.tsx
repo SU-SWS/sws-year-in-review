@@ -59,42 +59,92 @@ export default function Home() {
               numbers.
             </Text>
           </Heading>
-          <Grid md={4} gap='default'>
-            <Card icon={'user'} paddingType="small" iconColor='blue'>
-              <Heading>
-                66/34
-              </Heading>
+          <Grid md={4} gap="default">
+            <Card icon={'user'} paddingType="small" iconColor="blue">
+              <Heading>66/34</Heading>
               <Paragraph className="text-black-40 big-paragraph font-semibold">
-                New clients/
-                returning clients
+                New clients/ returning clients
               </Paragraph>
             </Card>
-            <Card icon={'badge'} paddingType="small" iconColor='purple'>
-              <Heading>
-                1,456
-              </Heading>
+            <Card icon={'badge'} paddingType="small" iconColor="purple">
+              <Heading>1,456</Heading>
               <Paragraph className="text-black-40 big-paragraph font-semibold">
                 Resolved SNOW tickets
               </Paragraph>
             </Card>
-            <Card icon={'clock'} paddingType="small" iconColor='illuminating'>
-              <Heading>
-                467
-              </Heading>
+            <Card icon={'clock'} paddingType="small" iconColor="illuminating">
+              <Heading>467</Heading>
               <Paragraph className="text-black-40 big-paragraph font-semibold">
                 Training & office hours
               </Paragraph>
             </Card>
-            <Card icon={'bookmark'} paddingType="small" iconColor='blue'>
-              <Heading>
-                97.0
-              </Heading>
+            <Card icon={'bookmark'} paddingType="small" iconColor="blue">
+              <Heading>97.0</Heading>
               <Paragraph className="text-black-40 big-paragraph font-semibold">
                 Stanford Sites accessibility score (out of the box)
               </Paragraph>
             </Card>
           </Grid>
         </div>
+        <div>
+          {/* TODO: GRADIENT HEADING */}
+          <Heading>
+            We build Stanford Sites. A free, campus-wide solution for your
+            websites. Built on Drupal, we host over 2,000 sites.
+          </Heading>
+          <Heading>and...</Heading>
+        </div>
+        <Grid sm={1}  md={2} gap="default">
+          <Card paddingType="large">
+            <Heading as="h3" size={4} className="mb-1">
+              We partner with teams across UIT to build{' '}
+              <Text
+                as="span"
+                bgColor="illuminating"
+                className="px-10 rounded text-black-true"
+              >
+                web applications.
+              </Text>
+            </Heading>
+          </Card>
+          <Card paddingType="large">
+            <Heading as="h3" size={4} className="mb-1">
+              We learn about our ideas and products through{' '}
+              <Text
+                as="span"
+                bgColor="teal"
+                className="px-10 rounded text-black-true"
+              >
+                user research.
+              </Text>
+            </Heading>
+          </Card>
+          <Card paddingType="large">
+            <Heading as="h3" size={4} className="mb-1">
+              It’s not only Drupal — we can work on your{' '}
+              <Text
+                as="span"
+                bgColor="blue"
+                className="px-10 rounded text-black-true"
+              >
+                platform of choice.
+              </Text>
+            </Heading>
+          </Card>
+          <Card paddingType="large">
+            <Heading as="h3" size={4} className="mb-1">
+              We create{' '}
+              <Text
+                as="span"
+                bgColor="purple"
+                className="px-10 rounded text-black-true"
+              >
+                custom design,
+              </Text>{' '}
+              tailored to your Stanford brand.
+            </Heading>
+          </Card>
+        </Grid>
         <Timeline month="Aug" date="08" addCenterLine>
           <div>
             <Paragraph>Lorem ipsum sit</Paragraph>

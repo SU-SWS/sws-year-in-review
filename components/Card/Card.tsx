@@ -7,7 +7,7 @@ export interface CardProps extends React.HTMLAttributes<HTMLElement> {
   as?: types.CardType;
   className?: string;
   children?: ReactNode;
-  icon: styles.IconType;
+  icon?: styles.IconType;
   // Title for the SVG for accessibility
   title?: string;
   noBaseStyle?: boolean;
