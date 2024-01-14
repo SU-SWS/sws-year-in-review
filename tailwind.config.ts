@@ -20,6 +20,7 @@ export default {
   theme: {
     containers: require(`${dir}/theme/containers.js`)(),
     extend: {
+      colors: require(`${dir}/theme/colors.js`)(),
       fontFamily: require(`${dir}/theme/fontFamily.js`)(),
       screens: require(`${dir}/theme/screens.js`)(),
     },
