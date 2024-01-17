@@ -1,12 +1,6 @@
 'use client';
 import { HTMLAttributes, useRef } from 'react';
-import {
-  useScroll,
-  motion,
-  MotionStyle,
-  useTransform,
-  useInView,
-} from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { cnb } from 'cnbuilder';
 import { Grid } from '../Grid/Grid';
 
@@ -39,14 +33,14 @@ export const TimelineItem = ({
     margin: '-30% -30%',
   });
   const containerAnimation = {
-    hidden: { width: 20, height: 20, x: -10 },
+    hidden: { width: 16, height: 16, x: -8 },
     visible: { width: 170, height: 170, x: -85 },
   };
   const circleAnimation = {
     hidden: {
-      width: 20,
-      height: 20,
-      x: -10,
+      width: 16,
+      height: 16,
+      x: -8,
       borderWidth: '.2rem',
       backgroundColor: '#000000',
       borderColor: '#B870BD',
@@ -54,19 +48,31 @@ export const TimelineItem = ({
     visible: {
       width: 170,
       height: 170,
-      x:-85,
+      x: -85,
       borderWidth: '2rem',
       backgroundColor: '#E50808',
       borderColor: '#F8353554',
     },
   };
   const barAnimation = {
-    hidden: { scaleY: 0,  },
-    visible: { scaleY: 1,  },
+    hidden: { scaleY: 0 },
+    visible: { scaleY: 1 },
   };
   const textOpacity = {
     hidden: { opacity: 0.3 },
     visible: { opacity: 1 },
+  };
+  const monthAnimation = {
+    hidden: { fontSize: '1em', width: '6rem', opacity: '0.4' },
+    visible: { fontSize: '1.3em', width: 'auto', opacity: '1' },
+  };
+  const dayAnimation = {
+    hidden: {
+      fontSize: '1em', fontWeight: 'normal', width: '6rem', opacity: '0.4',
+    },
+    visible: {
+      fontSize: '2em', fontWeight: 'bold', width: 'auto', opacity: '1',
+    },
   };
 
   return (
@@ -75,32 +81,43 @@ export const TimelineItem = ({
       ref={ref}
       className="relative w-full z-10"
     >
-      {/* <motion.div className="group flex items-center justify-center absolute size-40 hover:size-170 top-0 left-1/2 -ml-20 hover:-ml-85"> */}
       <motion.div
         variants={containerAnimation}
         animate={isInView ? 'visible' : 'hidden'}
         transition={{ duration: 0.3 }}
         className="group flex items-center justify-center absolute top-0 left-1/2"
       >
-        {/* <motion.div
-          animate={isInView ? 'visible' : 'hidden'}
-          className="flex items-center justify-center absolute top-0 left-1/2 -ml-20 group-hover:-ml-85 size-40 group-hover:size-170 rounded-full bg-clip-padding bg-digital-red-light border-[2rem] border-digital-red-light/30"
-        /> */}
         <motion.div
           variants={barAnimation}
           animate={isInView ? 'visible' : 'hidden'}
-          transition={{ duration: 0.3 }}
-          className="hidden md:block w-2 h-[47rem] -mt-[15rem] absolute top-0 left-1/2 -ml-1 origin-center bg-black z-10 bg-gradient-to-b from-purple via-digital-red-light to-purple"
+          transition={{ duration: 0.3, ease: 'easeIn' }}
+          className="hidden md:block w-2 h-[57rem] -mt-[20rem] absolute top-0 left-1/2 -ml-1 origin-center bg-gradient-to-b from-purple via-digital-red-light to-purple z-10"
         />
         <motion.div
           variants={circleAnimation}
           animate={isInView ? 'visible' : 'hidden'}
           transition={{ duration: 0.3 }}
-          className="flex items-center justify-center absolute top-0 left-1/2 rounded-full bg-clip-padding"
+          className="flex items-center justify-center absolute top-0 left-1/2 rounded-full bg-clip-padding z-20"
         />
-        <div className="text-center z-20">
-          <motion.span className="">{month}</motion.span>
-          <motion.span className="">{day}</motion.span>
+        <div
+          className={cnb('flex z-30 text-center transition-all', isInView ? 'flex-col' : 'flex-row gap-x-36')}
+        >
+          <motion.span
+            variants={monthAnimation}
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.3 }}
+            className={cnb('inline-block leading-display', isInView ? 'text-center' : 'text-right')}
+          >
+            {month}
+          </motion.span>
+          <motion.span
+            variants={dayAnimation}
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.3 }}
+            className={cnb('inline-block leading-display', isInView ? 'text-center' : 'text-left')}
+          >
+            {day}
+          </motion.span>
         </div>
       </motion.div>
       <motion.div

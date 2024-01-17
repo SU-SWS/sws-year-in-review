@@ -1,17 +1,6 @@
 'use client';
-import React, { HTMLAttributes, useRef } from 'react';
-import {
-  useScroll,
-  useSpring,
-  motion,
-  MotionStyle,
-  useTransform,
-} from 'framer-motion';
+import React, { useRef, HTMLAttributes } from 'react';
 import { cnb } from 'cnbuilder';
-import { Grid, type GridProps } from '../Grid/Grid';
-import { type GridNegativeSpacingType, type GridWidthType } from '../Grid/Grid.types';
-import { marginBottoms, type MarginType } from '@/utilities/datasource';
-import * as styles from '../Grid/Grid.styles';
 
 /**
  * This component place each React node in the children in an alternating grid pattern.
@@ -35,12 +24,11 @@ export const Timeline = ({
 
   return (
     <div
-      className={cnb('relative w-full grid gap-y-500', className)}
+      {...props}
+      className={cnb('relative w-full grid gap-y-450', className)}
     >
       {children}
-      <div
-        className="hidden md:block w-2 absolute top-0 left-1/2 -ml-1 h-full origin-top bg-purple"
-      />
+      <div className="hidden md:block w-2 absolute top-0 left-1/2 -ml-1 h-full origin-top bg-purple" />
     </div>
   );
 };

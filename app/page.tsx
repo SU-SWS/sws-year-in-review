@@ -1,7 +1,6 @@
 import { Card } from '@/components/Card';
 import { Grid } from '@/components/Grid';
-import { Timeline } from '@/components/Timeline';
-import { TimelineOld, TimelineItem } from '@/components/Timeline';
+import { Timeline, TimelineItem } from '@/components/Timeline';
 import { Heading, Paragraph, Text } from '@/components/Typography';
 
 export default function Home() {
@@ -147,8 +146,21 @@ export default function Home() {
             </Heading>
           </Card>
         </Grid>
-        <Timeline className="rs-py-10 rs-my-10">
-          <TimelineItem month="Aug" day="08">
+        {/* Timeline section */}
+        <Heading
+          as="h2"
+          size={6}
+          leading="normal"
+          className="rs-mt-10 rs-mb-6"
+        >
+          On this {' '}
+          <Text as="span" bgColor="purple" color="black-true" className="px-10 rounded">
+            day
+          </Text>
+          {' '} in 2023.
+        </Heading>
+        <Timeline className="rs-py-10 rs-mb-10">
+          <TimelineItem month="Jan" day="10">
             <div>
               <Text color="black-40">Launch</Text>
               <Heading>Admin Guide launches 🎉</Heading>
@@ -189,94 +201,6 @@ export default function Home() {
             </Paragraph>
           </TimelineItem>
         </Timeline>
-        {/* <TimelineOld month="Aug" date="08" addCenterLine>
-          <div>
-            <Paragraph>Lorem ipsum sit</Paragraph>
-            <Heading>Consectetur adipscing elit, sed</Heading>
-          </div>
-          <div>
-            <Heading>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-          </div>
-        </TimelineOld>
-        <TimelineOld month="Aug" date="08" addCenterLine>
-          <div>
-            <Heading>Lorem ipsum </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-          </div>
-        </TimelineOld>
-        <TimelineOld month="Aug" date="08" addCenterLine>
-          <div>
-            <Paragraph>Lorem ipsum sit</Paragraph>
-            <Heading>Consectetur adipscing elit, sed</Heading>
-          </div>
-          <div>
-            <Heading>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-          </div>
-        </TimelineOld>
-        <TimelineOld month="Aug" date="08" addCenterLine>
-          <div>
-            <Heading>Lorem ipsum </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-            <Paragraph
-              weight="semibold"
-              size={4}
-              leading="display"
-              color="black-50"
-            >
-              Consectetur adipiscing elit, sed do eiusmod tempor dolar sit amet,
-              consectetur adipiscing elit, sed du eiusmod tempor.
-            </Paragraph>
-          </div>
-        </TimelineOld> */}
       </div>
     </main>
   );
