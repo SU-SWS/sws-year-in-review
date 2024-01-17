@@ -21,7 +21,6 @@ export const fontSizes = {
   7: 'type-7',
   8: 'type-8',
   9: 'type-9',
-
 };
 
 // Line heights

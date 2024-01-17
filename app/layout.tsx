@@ -4,7 +4,7 @@ import './globals.css';
 import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
 import localFont from 'next/font/local';
 import { FlexBox } from '@/components/FlexBox';
-import { Masthead } from '@/components/Masthead/Masthead';
+import { Masthead } from '@/components/Masthead';
 import { GlobalFooter } from '@/components/GlobalFooter';
 
 const source_sans = Source_Sans_3({

@@ -1,12 +1,13 @@
 import { Card } from '@/components/Card';
-import { Grid, Timeline } from '@/components/Grid';
+import { Grid } from '@/components/Grid';
 import { Heading, Paragraph, Text } from '@/components/Typography';
+import { TimelineSection } from '@/components/PageSections';
 
 export default function Home() {
   return (
     <main className="bg-black-true text-white">
       <div className="cc">
-        <div className="max-w-[120rem] h-fit">
+        <div className="max-w-[120rem]">
           <Heading as="h1" size={8} leading="tight" className="rs-mb-2 rs-mt-8">
             2023 Year in review.
           </Heading>
@@ -32,7 +33,7 @@ export default function Home() {
               as="span"
               color="black-true"
               bgColor="purple"
-              className="px-10 rounded"
+              className="px-10 rounded-[0.8rem]"
             >
               custom
             </Text>{' '}
@@ -55,7 +56,7 @@ export default function Home() {
             className="rs-mb-2 rs-mt-8"
           >
             Service in the{' '}
-            <Text as="span" bgColor="teal" className="px-10 rounded">
+            <Text as="span" bgColor="teal" className="px-10 rounded-[0.8rem]">
               numbers.
             </Text>
           </Heading>
@@ -101,7 +102,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="illuminating"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 web applications.
               </Text>
@@ -113,7 +114,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="teal"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 user research.
               </Text>
@@ -125,7 +126,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="blue"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 platform of choice.
               </Text>
@@ -137,7 +138,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="purple"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 custom design,
               </Text>{' '}
@@ -145,94 +146,7 @@ export default function Home() {
             </Heading>
           </Card>
         </Grid>
-        <Timeline month="Aug" date="08" addCenterLine>
-          <div>
-            <Paragraph>Lorem ipsum sit</Paragraph>
-            <Heading>Consectetur adipscing elit, sed</Heading>
-          </div>
-          <div>
-            <Heading>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-          </div>
-        </Timeline>
-        <Timeline month="Aug" date="08" addCenterLine>
-          <div>
-            <Heading>Lorem ipsum </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-          </div>
-        </Timeline>
-        <Timeline month="Aug" date="08" addCenterLine>
-          <div>
-            <Paragraph>Lorem ipsum sit</Paragraph>
-            <Heading>Consectetur adipscing elit, sed</Heading>
-          </div>
-          <div>
-            <Heading>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-          </div>
-        </Timeline>
-        <Timeline month="Aug" date="08" addCenterLine>
-          <div>
-            <Heading>Lorem ipsum </Heading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Paragraph>
-            <Paragraph
-              weight="semibold"
-              size={4}
-              leading="display"
-              color="black-50"
-            >
-              Consectetur adipiscing elit, sed do eiusmod tempor dolar sit amet,
-              consectetur adipiscing elit, sed du eiusmod tempor.
-            </Paragraph>
-          </div>
-        </Timeline>
+        <TimelineSection />
       </div>
     </main>
   );
