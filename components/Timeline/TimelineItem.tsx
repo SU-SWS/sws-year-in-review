@@ -73,7 +73,7 @@ export const TimelineItem = ({
         variants={containerAnimation}
         animate={isInView ? 'visible' : 'hidden'}
         transition={{ duration: 0.4 }}
-        className="group flex items-center justify-center absolute top-0 left-1/2"
+        className="group flex items-center justify-center absolute top-8 left-1/2"
       >
         <motion.div
           variants={barAnimation}
