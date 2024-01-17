@@ -21,7 +21,7 @@ export const fontSizes = {
   7: 'type-7',
   8: 'type-8',
   9: 'type-9',
-  hero: 'hero',
+
 };
 
 // Line heights
@@ -44,13 +44,23 @@ export const textAligns = {
 export const textColors = {
   default: '', // Interit from the base
   black: 'text-black',
+  'black-true': 'text-black-true',
+  'black-40': 'text-black-40',
+  'black-50': 'text-black-50',
   white: 'text-white',
+};
+
+export const textBgColors = {
+  default: '', // Interit from the base
+  teal: 'bg-teal',
+  purple: 'bg-purple',
+  blue: 'bg-sky-blue-bright',
+  illuminating: 'bg-illuminating',
 };
 
 export const textVariants = {
   none: '',
   big: 'big-paragraph',
+  card: 'card-paragraph',
   subheading: 'subheading',
 };
-
-export const iconStyle = 'inline-block shrink-0 w-09em ml-03em -mt-01em';
