@@ -1,5 +1,7 @@
 import { Card } from '@/components/Card';
-import { Grid, Timeline } from '@/components/Grid';
+import { Grid } from '@/components/Grid';
+import { Timeline } from '@/components/Timeline';
+import { TimelineOld, TimelineItem } from '@/components/Timeline';
 import { Heading, Paragraph, Text } from '@/components/Typography';
 
 export default function Home() {
@@ -145,7 +147,49 @@ export default function Home() {
             </Heading>
           </Card>
         </Grid>
-        <Timeline month="Aug" date="08" addCenterLine>
+        <Timeline className="rs-py-10 rs-my-10">
+          <TimelineItem month="Aug" day="08">
+            <div>
+              <Text color="black-40">Launch</Text>
+              <Heading>Admin Guide launches 🎉</Heading>
+            </div>
+            <Paragraph size={1} weight="bold">
+              Created a new content type for Stanford Sites — policy —
+              enabling the Admin Guide to move onto the custom platform.
+            </Paragraph>
+          </TimelineItem>
+          <TimelineItem month="Aug" day="08">
+            <div>
+              <Text color="black-40">Launch</Text>
+              <Heading>Admin Guide launches 🎉</Heading>
+            </div>
+            <Paragraph size={1} weight="bold">
+              Created a new content type for Stanford Sites — policy —
+              enabling the Admin Guide to move onto the custom platform.
+            </Paragraph>
+          </TimelineItem>
+          <TimelineItem month="Aug" day="08">
+            <div>
+              <Text color="black-40">Launch</Text>
+              <Heading>Admin Guide launches 🎉</Heading>
+            </div>
+            <Paragraph size={1} weight="bold">
+              Created a new content type for Stanford Sites — policy —
+              enabling the Admin Guide to move onto the custom platform.
+            </Paragraph>
+          </TimelineItem>
+          <TimelineItem month="Aug" day="08">
+            <div>
+              <Text color="black-40">Launch</Text>
+              <Heading>Admin Guide launches 🎉</Heading>
+            </div>
+            <Paragraph size={1} weight="bold">
+              Created a new content type for Stanford Sites — policy —
+              enabling the Admin Guide to move onto the custom platform.
+            </Paragraph>
+          </TimelineItem>
+        </Timeline>
+        {/* <TimelineOld month="Aug" date="08" addCenterLine>
           <div>
             <Paragraph>Lorem ipsum sit</Paragraph>
             <Heading>Consectetur adipscing elit, sed</Heading>
@@ -165,8 +209,8 @@ export default function Home() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Paragraph>
           </div>
-        </Timeline>
-        <Timeline month="Aug" date="08" addCenterLine>
+        </TimelineOld>
+        <TimelineOld month="Aug" date="08" addCenterLine>
           <div>
             <Heading>Lorem ipsum </Heading>
             <Paragraph>
@@ -188,8 +232,8 @@ export default function Home() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Paragraph>
           </div>
-        </Timeline>
-        <Timeline month="Aug" date="08" addCenterLine>
+        </TimelineOld>
+        <TimelineOld month="Aug" date="08" addCenterLine>
           <div>
             <Paragraph>Lorem ipsum sit</Paragraph>
             <Heading>Consectetur adipscing elit, sed</Heading>
@@ -209,8 +253,8 @@ export default function Home() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Paragraph>
           </div>
-        </Timeline>
-        <Timeline month="Aug" date="08" addCenterLine>
+        </TimelineOld>
+        <TimelineOld month="Aug" date="08" addCenterLine>
           <div>
             <Heading>Lorem ipsum </Heading>
             <Paragraph>
@@ -232,7 +276,7 @@ export default function Home() {
               consectetur adipiscing elit, sed du eiusmod tempor.
             </Paragraph>
           </div>
-        </Timeline>
+        </TimelineOld> */}
       </div>
     </main>
   );

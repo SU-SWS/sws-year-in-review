@@ -8,10 +8,10 @@ import {
   useTransform,
 } from 'framer-motion';
 import { cnb } from 'cnbuilder';
-import { Grid, type GridProps } from './Grid';
-import { type GridNegativeSpacingType, type GridWidthType } from './Grid.types';
+import { Grid, type GridProps } from '../Grid/Grid';
+import { type GridNegativeSpacingType, type GridWidthType } from '../Grid/Grid.types';
 import { marginBottoms, type MarginType } from '@/utilities/datasource';
-import * as styles from './Grid.styles';
+import * as styles from '../Grid/Grid.styles';
 
 /**
  * This component place each React node in the children in an alternating grid pattern.
@@ -19,13 +19,13 @@ import * as styles from './Grid.styles';
  * @component
  *
  * @example
- * <Timeline startOnRight>
+ * <TimelineOld startOnRight>
  *  <Paragraph>Item 1 - Lorem Ipsum</Paragraph>
  *  <Paragraph>Item 2 - Lorem Ipsum</Paragraph>
- * </Timeline>
+ * </TimelineOld>
  */
 
-type TimelineProps = HTMLAttributes<HTMLElement> &
+type TimelineOldProps = HTMLAttributes<HTMLElement> &
   Pick<GridProps, 'as' | 'gap' | 'pt' | 'pb' | 'py'> & {
     startOnRight?: boolean;
     addCenterLine?: boolean;
@@ -37,7 +37,7 @@ type TimelineProps = HTMLAttributes<HTMLElement> &
     date: string;
   };
 
-export const Timeline = ({
+export const TimelineOld = ({
   as,
   startOnRight,
   addCenterLine,
@@ -51,7 +51,7 @@ export const Timeline = ({
   month,
   date,
   ...props
-}: TimelineProps) => {
+}: TimelineOldProps) => {
   // turn children into array
   const childrenArray = React.Children.toArray(children);
   const containerRef = useRef(null);
