@@ -4,18 +4,6 @@ import { motion, useInView } from 'framer-motion';
 import { cnb } from 'cnbuilder';
 import { Grid } from '../Grid/Grid';
 
-/**
- * This component place each React node in the children in an alternating grid pattern.
- *
- * @component
- *
- * @example
- * <Timeline startOnRight>
- *  <Paragraph>Item 1 - Lorem Ipsum</Paragraph>
- *  <Paragraph>Item 2 - Lorem Ipsum</Paragraph>
- * </Timeline>
- */
-
 type TimelineItemProps = HTMLAttributes<HTMLDivElement> & {
   month: string;
   day: string;
@@ -30,7 +18,7 @@ export const TimelineItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, {
     once: false,
-    margin: '-30% -30%',
+    margin: '-25% -20%',
   });
   const containerAnimation = {
     hidden: { width: 16, height: 16, x: -8 },
@@ -84,19 +72,19 @@ export const TimelineItem = ({
       <motion.div
         variants={containerAnimation}
         animate={isInView ? 'visible' : 'hidden'}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.4 }}
         className="group flex items-center justify-center absolute top-0 left-1/2"
       >
         <motion.div
           variants={barAnimation}
           animate={isInView ? 'visible' : 'hidden'}
-          transition={{ duration: 0.3, ease: 'easeIn' }}
+          transition={{ duration: 0.4, ease: 'easeIn' }}
           className="hidden md:block w-2 h-[57rem] -mt-[20rem] absolute top-0 left-1/2 -ml-1 origin-center bg-gradient-to-b from-purple via-digital-red-light to-purple z-10"
         />
         <motion.div
           variants={circleAnimation}
           animate={isInView ? 'visible' : 'hidden'}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4 }}
           className="flex items-center justify-center absolute top-0 left-1/2 rounded-full bg-clip-padding z-20"
         />
         <div
@@ -105,7 +93,7 @@ export const TimelineItem = ({
           <motion.span
             variants={monthAnimation}
             animate={isInView ? 'visible' : 'hidden'}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4 }}
             className={cnb('inline-block leading-display', isInView ? 'text-center' : 'text-right')}
           >
             {month}
@@ -113,7 +101,7 @@ export const TimelineItem = ({
           <motion.span
             variants={dayAnimation}
             animate={isInView ? 'visible' : 'hidden'}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4 }}
             className={cnb('inline-block leading-display', isInView ? 'text-center' : 'text-left')}
           >
             {day}
@@ -123,7 +111,7 @@ export const TimelineItem = ({
       <motion.div
         variants={textOpacity}
         animate={isInView ? 'visible' : 'hidden'}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.4 }}
       >
         <Grid
           md={2}

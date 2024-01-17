@@ -1,18 +1,5 @@
-'use client';
-import React, { useRef, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import { cnb } from 'cnbuilder';
-
-/**
- * This component place each React node in the children in an alternating grid pattern.
- *
- * @component
- *
- * @example
- * <Timeline startOnRight>
- *  <Paragraph>Item 1 - Lorem Ipsum</Paragraph>
- *  <Paragraph>Item 2 - Lorem Ipsum</Paragraph>
- * </Timeline>
- */
 
 type TimelineProps = HTMLAttributes<HTMLDivElement>;
 
