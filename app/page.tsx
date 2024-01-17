@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="bg-black-true text-white">
       <div className="cc">
-        <div className="max-w-[120rem] h-fit">
+        <div className="max-w-[120rem]">
           <Heading as="h1" size={8} leading="tight" className="rs-mb-2 rs-mt-8">
             2023 Year in review.
           </Heading>
@@ -33,7 +33,7 @@ export default function Home() {
               as="span"
               color="black-true"
               bgColor="purple"
-              className="px-10 rounded"
+              className="px-10 rounded-[0.8rem]"
             >
               custom
             </Text>{' '}
@@ -56,7 +56,7 @@ export default function Home() {
             className="rs-mb-2 rs-mt-8"
           >
             Service in the{' '}
-            <Text as="span" bgColor="teal" className="px-10 rounded">
+            <Text as="span" bgColor="teal" className="px-10 rounded-[0.8rem]">
               numbers.
             </Text>
           </Heading>
@@ -102,7 +102,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="illuminating"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 web applications.
               </Text>
@@ -114,7 +114,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="teal"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 user research.
               </Text>
@@ -126,7 +126,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="blue"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 platform of choice.
               </Text>
@@ -138,7 +138,7 @@ export default function Home() {
               <Text
                 as="span"
                 bgColor="purple"
-                className="px-10 rounded text-black-true"
+                className="px-10 rounded-[0.8rem] text-black-true"
               >
                 custom design,
               </Text>{' '}
@@ -154,7 +154,7 @@ export default function Home() {
           className="rs-mt-10 rs-mb-6"
         >
           On this {' '}
-          <Text as="span" bgColor="purple" color="black-true" className="px-10 rounded">
+          <Text as="span" bgColor="purple" color="black-true" className="px-10 rounded-[0.8rem]">
             day
           </Text>
           {' '} in 2023.
