@@ -1,6 +1,6 @@
 'use client';
 import { HTMLAttributes, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { m, useInView } from 'framer-motion';
 import { cnb } from 'cnbuilder';
 import { Grid } from '../Grid/Grid';
 
@@ -69,19 +69,19 @@ export const TimelineItem = ({
       ref={ref}
       className="relative w-full z-10"
     >
-      <motion.div
+      <m.div
         variants={containerAnimation}
         animate={isInView ? 'visible' : 'hidden'}
         transition={{ duration: 0.4 }}
-        className="group flex items-center justify-center absolute top-8 left-1/2"
+        className="flex items-center justify-center absolute top-8 left-1/2"
       >
-        <motion.div
+        <m.div
           variants={barAnimation}
           animate={isInView ? 'visible' : 'hidden'}
           transition={{ duration: 0.4, ease: 'easeIn' }}
           className="hidden md:block w-2 h-[57rem] -mt-[20rem] absolute top-0 left-1/2 -ml-1 origin-center bg-gradient-to-b from-purple via-digital-red-light to-purple z-10"
         />
-        <motion.div
+        <m.div
           variants={circleAnimation}
           animate={isInView ? 'visible' : 'hidden'}
           transition={{ duration: 0.4 }}
@@ -90,25 +90,25 @@ export const TimelineItem = ({
         <div
           className={cnb('flex z-30 text-center transition-all', isInView ? 'flex-col' : 'flex-row gap-x-36')}
         >
-          <motion.span
+          <m.span
             variants={monthAnimation}
             animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.4 }}
             className={cnb('inline-block leading-display', isInView ? 'text-center' : 'text-right')}
           >
             {month}
-          </motion.span>
-          <motion.span
+          </m.span>
+          <m.span
             variants={dayAnimation}
             animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.4 }}
             className={cnb('inline-block leading-display', isInView ? 'text-center' : 'text-left')}
           >
             {day}
-          </motion.span>
+          </m.span>
         </div>
-      </motion.div>
-      <motion.div
+      </m.div>
+      <m.div
         variants={textOpacity}
         animate={isInView ? 'visible' : 'hidden'}
         transition={{ duration: 0.4 }}
@@ -120,7 +120,7 @@ export const TimelineItem = ({
         >
           {children}
         </Grid>
-      </motion.div>
+      </m.div>
     </div>
   );
 };

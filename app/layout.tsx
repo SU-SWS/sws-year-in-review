@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { LazyMotion, domAnimation } from 'framer-motion';
 import { cnb } from 'cnbuilder';
 import './globals.css';
 import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
@@ -28,8 +29,8 @@ const stanford = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Stanford Web Services | Year in Review',
-  description: 'Stanford Web Services Year in Review website',
+  title: '2023 Year in Review | Stanford Web Services',
+  description: 'Stanford Web Services 2023 Year in Review website',
 };
 
 export default function RootLayout({
@@ -38,16 +39,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={cnb(source_sans.variable, source_serif.variable, stanford.variable)}>
-      <body className='bg-black-true text-white'>
-        <FlexBox justifyContent="between" direction="col" className="min-h-screen relative">
-          <Masthead />
-          {children}
-          <footer>
-            <GlobalFooter />
-          </footer>
-        </FlexBox>
-      </body>
-    </html>
+    <LazyMotion features={domAnimation} strict>
+      <html lang="en" className={cnb(source_sans.variable, source_serif.variable, stanford.variable)}>
+        <body className='bg-black-true text-white'>
+          <FlexBox justifyContent="between" direction="col" className="min-h-screen relative">
+            <Masthead />
+            {children}
+            <footer>
+              <GlobalFooter />
+            </footer>
+          </FlexBox>
+        </body>
+      </html>
+    </LazyMotion>
   );
 }
