@@ -1,5 +1,7 @@
 import { Card } from '@/components/Card';
 import { Grid, Timeline } from '@/components/Grid';
+import { AspectImage } from '@/components/Image';
+import Slideshow from '@/components/Slider/Slideshow';
 import { Heading, Paragraph, Text } from '@/components/Typography';
 
 export default function Home() {
@@ -44,7 +46,20 @@ export default function Home() {
             Stanford Sites.
           </Paragraph>
           <div className="h-400">
-            <Paragraph>Cards coming soon...</Paragraph>
+            <Slideshow>
+              <AspectImage
+                src="http://placekitten.com/g/200/300"
+                alt="Kitten Photo"
+              />
+              <AspectImage
+                src="http://placekitten.com/g/200/300"
+                alt="Kitten Photo"
+              />
+              <AspectImage
+                src="http://placekitten.com/g/200/300"
+                alt="Kitten Photo"
+              />
+            </Slideshow>
           </div>
         </div>
         <div className="">
