@@ -45,19 +45,19 @@ export default function Home() {
             Stanford, employing Storyblok, Lorem Ipsum, and our very own,
             Stanford Sites.
           </Paragraph>
-          <div className="h-400">
+          <div>
             <Slideshow>
               <AspectImage
-                src="http://placekitten.com/g/200/300"
-                alt="Kitten Photo"
+                src="/images/ChemH.png"
+                alt="ChemH Website"
               />
               <AspectImage
-                src="http://placekitten.com/g/200/300"
-                alt="Kitten Photo"
+                src="/images/DIR.png"
+                alt="DIR Website"
               />
               <AspectImage
-                src="http://placekitten.com/g/200/300"
-                alt="Kitten Photo"
+                src="/images/SUL.png"
+                alt="SUL Website"
               />
             </Slideshow>
           </div>
