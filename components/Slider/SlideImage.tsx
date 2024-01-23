@@ -24,7 +24,7 @@ export function SlideImage({
     src={src}
     alt={altText ? altText : ''}
     className={cnb(
-      'rounded w-full h-500',
+      'rounded w-full h-full',
       className,
     )}
   />

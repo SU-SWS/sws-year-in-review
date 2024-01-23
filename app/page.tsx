@@ -45,7 +45,9 @@ export default function Home() {
             Stanford, employing Storyblok, Lorem Ipsum, and our very own,
             Stanford Sites.
           </Paragraph>
-          <Slideshow>
+        </div>
+        <div>
+        <Slideshow>
             <SlideImage
               src="/images/ChemH.png"
               alt="ChemH Website"
