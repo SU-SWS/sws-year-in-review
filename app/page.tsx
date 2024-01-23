@@ -59,6 +59,8 @@ export default function Home() {
               alt="SUL Website"
               caption="Stanford University Libraries new site features a decoupled front-end and a Drupal back-end."
             />
+            <SlideImage src="/images/WGH.png" alt="WGH Website" />
+            <SlideImage src="/images/Techsource.png" alt="Tech Source Website" />
           </Slideshow>
         </div>
         <div>

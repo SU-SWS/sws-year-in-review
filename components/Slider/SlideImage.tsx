@@ -18,17 +18,14 @@ export function SlideImage({
   ...rest
 }: SlideImageProps) {
   return (
-<div>
-    <img
-    {...rest}
-    src={src}
-    alt={altText ? altText : ''}
-    className={cnb(
-      'rounded w-full h-full',
-      className,
-    )}
-  />
-      {caption && <Paragraph>{caption}</Paragraph>}
-</div>
+    <div>
+      <img
+        {...rest}
+        src={src}
+        alt={altText ? altText : ''}
+        className={cnb('rounded w-full h-full', className)}
+      />
+      {caption && <Paragraph className="font-18">{caption}</Paragraph>}
+    </div>
   );
 }

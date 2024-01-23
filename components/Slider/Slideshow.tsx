@@ -36,7 +36,7 @@ export default function Slideshow({ children }: SlideshowProps) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows : false,
@@ -47,11 +47,11 @@ export default function Slideshow({ children }: SlideshowProps) {
         {children}
       </Slider>
       <div>
-`      <button className="absolute top-1/2 right-1" 
+`      <button className="absolute top-1/3 right-1" 
         onClick={() => arrowRef.current.slickPrev()}>
         <ArrowRightCircleIcon className="w-60 text-teal" />
       </button>
-      <button className="absolute top-1/2 left-1" 
+      <button className="absolute top-1/3 left-1" 
         onClick={() => arrowRef.current.slickNext()}>
         <ArrowLeftCircleIcon className="w-60 text-teal" />
       </button>`
