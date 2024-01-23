@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState } from 'react';
-import Slider from 'react-slick';
+import Slider, {Settings} from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {
@@ -12,24 +12,10 @@ export type SlideshowProps = {
   children: React.ReactNode;
 };
 
-function NextArrow() {
-  return (
-    <button className="absolute top-1/2 right--1">
-      <ArrowRightCircleIcon className="w-60 text-teal" />
-    </button>
-  );
-}
-
-function PrevArrow() {
-  return (
-    <button className="absolute top-1/2 left--1">
-      <ArrowLeftCircleIcon className="w-60 text-teal" />
-    </button>
-  );
-}
+type SliderRef = Slider | null;
 
 export default function Slideshow({ children }: SlideshowProps) {
-  const arrowRef = useRef(null);
+  const arrowRef = useRef<SliderRef | null>(null);
   const settings = {
     className: 'center',
     centerMode: true,
@@ -48,11 +34,11 @@ export default function Slideshow({ children }: SlideshowProps) {
       </Slider>
       <div>
 `      <button className="absolute top-1/3 right-1" 
-        onClick={() => arrowRef.current.slickPrev()}>
+        onClick={() => arrowRef && arrowRef.current?.slickPrev()}>
         <ArrowRightCircleIcon className="w-60 text-teal" />
       </button>
       <button className="absolute top-1/3 left-1" 
-        onClick={() => arrowRef.current.slickNext()}>
+        onClick={() => arrowRef && arrowRef.current?.slickNext()}>
         <ArrowLeftCircleIcon className="w-60 text-teal" />
       </button>`
       </div>
