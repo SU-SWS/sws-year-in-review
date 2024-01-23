@@ -1,6 +1,6 @@
 import { Card } from '@/components/Card';
 import { Grid, Timeline } from '@/components/Grid';
-import { AspectImage } from '@/components/Image';
+import { SlideImage } from '@/components/Slider/SlideImage';
 import Slideshow from '@/components/Slider/Slideshow';
 import { Heading, Paragraph, Text } from '@/components/Typography';
 
@@ -45,24 +45,21 @@ export default function Home() {
             Stanford, employing Storyblok, Lorem Ipsum, and our very own,
             Stanford Sites.
           </Paragraph>
-          <div>
-            <Slideshow>
-              <AspectImage
-                src="/images/ChemH.png"
-                alt="ChemH Website"
-              />
-              <AspectImage
-                src="/images/DIR.png"
-                alt="DIR Website"
-              />
-              <AspectImage
-                src="/images/SUL.png"
-                alt="SUL Website"
-              />
-            </Slideshow>
-          </div>
+          <Slideshow>
+            <SlideImage
+              src="/images/ChemH.png"
+              alt="ChemH Website"
+              caption="SWS launched a custom subtheme developed for Sarafan ChEM-H on Stanford Sites."
+            />
+            <SlideImage src="/images/DIR.png" alt="DIR Website" />
+            <SlideImage
+              src="/images/SUL.png"
+              alt="SUL Website"
+              caption="Stanford University Libraries new site features a decoupled front-end and a Drupal back-end."
+            />
+          </Slideshow>
         </div>
-        <div className="">
+        <div>
           <Heading
             as="h2"
             size={6}
