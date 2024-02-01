@@ -47,23 +47,25 @@ export default function Home() {
             Stanford Sites.
           </Paragraph>
         </div>
-        <div>
+      </div>
+      <div>
         <Slideshow>
-            <SlideImage
-              src="/images/ChemH.png"
-              alt="ChemH Website"
-              caption="SWS launched a custom subtheme developed for Sarafan ChEM-H on Stanford Sites."
-            />
-            <SlideImage src="/images/DIR.png" alt="DIR Website" />
-            <SlideImage
-              src="/images/SUL.png"
-              alt="SUL Website"
-              caption="Stanford University Libraries new site features a decoupled front-end and a Drupal back-end."
-            />
-            <SlideImage src="/images/WGH.png" alt="WGH Website" />
-            <SlideImage src="/images/Techsource.png" alt="Tech Source Website" />
-          </Slideshow>
-        </div>
+          <SlideImage
+            src="/images/ChemH.png"
+            alt="ChemH Website"
+            caption="SWS launched a custom subtheme developed for Sarafan ChEM-H on Stanford Sites."
+          />
+          <SlideImage src="/images/DIR.png" alt="DIR Website" />
+          <SlideImage
+            src="/images/SUL.png"
+            alt="SUL Website"
+            caption="Stanford University Libraries new site features a decoupled front-end and a Drupal back-end."
+          />
+          <SlideImage src="/images/WGH.png" alt="WGH Website" />
+          <SlideImage src="/images/Techsource.png" alt="Tech Source Website" />
+        </Slideshow>
+      </div>
+      <div className="cc">
         <div>
           <Heading
             as="h2"

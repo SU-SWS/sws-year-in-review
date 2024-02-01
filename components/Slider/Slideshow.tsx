@@ -31,6 +31,16 @@ export default function Slideshow({ children }: SlideshowProps) {
         <ul>{dots}</ul>
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode : false,
+        },
+      },
+    ],
   };
   return (
     <div className="relative w-full">

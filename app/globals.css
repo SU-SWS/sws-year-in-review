@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 .slick-track {
-  @apply rs-py-7 px-0;
+  @apply rs-py-8 px-0;
 }
 
 .slick-slide > div {
   @apply rs-mx-1;
 }
 
-.center .slick-slide.slick-active.slick-current {
-  @apply z-50 transition-all duration-[400ms] ease-[ease-in-out] scale-[1.5] opacity-100 relative;
-  pointer-events: all;
-}
+@media (min-width: 992px) {
+  .center .slick-slide.slick-active.slick-current {
+    @apply z-50 transition-all duration-[400ms] ease-[ease-in-out] scale-[1.5] opacity-100 relative;
+    pointer-events: all;
+  }
 
-.center .slick-slide {
-  @apply z-0 opacity-70 pointer-events-none;
+  .center .slick-slide {
+    @apply z-0 opacity-70 pointer-events-none;
+  }
 }
 
 .slick-slider .slick-dots li {
@@ -33,5 +35,5 @@
 }
 
 .slick-slider .slick-dots li button:before {
-  content: '';
+  content: "";
 }
