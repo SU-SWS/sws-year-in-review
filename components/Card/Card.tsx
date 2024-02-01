@@ -27,7 +27,7 @@ export const Card = ({
     <AsComponent
       {...rest}
       className={cnb(
-        'bg-black text-white rounded',
+        'bg-black text-white rounded-[0.8rem]',
         paddingType ? styles.paddingType[paddingType] : '',
         className,
       )}
