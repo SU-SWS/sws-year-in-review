@@ -6,10 +6,26 @@
   @apply py-100 px-0;
 }
 
-.center .slick-slide.slick-active.slick-current img {
-  @apply z-50 transition-all duration-[400ms] ease-[ease-in-out] opacity-100 scale-[2] relative;
+.center .slick-slide.slick-active.slick-current {
+  @apply z-50 transition-all duration-[400ms] ease-[ease-in-out] scale-[1] opacity-100 relative;
   pointer-events: all;
 }
-.center .slick-slide img {
-  @apply z-0 opacity-70 pointer-events-none;
+.center .slick-slide {
+  @apply z-0 opacity-70 scale-[0.75] pointer-events-none;
+}
+
+.slick-slider .slick-dots li {
+  width: unset;
+  height: unset;
+}
+
+.slick-slider .slick-dots li button {
+  @apply m-4 p-10 bg-black-50 w-20 h-20 rounded-full;
+}
+.slick-slider .slick-dots li.slick-active button {
+  @apply bg-illuminating;
+}
+
+.slick-slider .slick-dots li button:before {
+  content: '';
 }
