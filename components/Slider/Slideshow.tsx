@@ -49,16 +49,16 @@ export default function Slideshow({ children }: SlideshowProps) {
       </Slider>
       <div>
         <button
-          className="absolute top-1/3 right-1"
-          onClick={() => arrowRef && arrowRef.current?.slickNext()}
-        >
-          <ArrowRightCircleIcon className="w-60 text-teal" />
-        </button>
-        <button
           className="absolute top-1/3 left-1"
           onClick={() => arrowRef && arrowRef.current?.slickPrev()}
         >
           <ArrowLeftCircleIcon className="w-60 text-teal" />
+        </button>
+        <button
+          className="absolute top-1/3 right-1"
+          onClick={() => arrowRef && arrowRef.current?.slickNext()}
+        >
+        <ArrowRightCircleIcon className="w-60 text-teal" />
         </button>
       </div>
     </div>

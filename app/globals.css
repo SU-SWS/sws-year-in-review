@@ -30,9 +30,26 @@
   @apply m-4 p-10 bg-black-50 w-20 h-20 rounded-full;
 }
 
+.slick-slider .slick-dots li button:focus,
+.slick-slider .slick-dots li button:hover {
+  @apply bg-black-70;
+}
+
 .slick-slider .slick-dots li.slick-active button {
   @apply bg-illuminating;
 }
+
+
+.slick-slider .slick-dots li button:focus,
+.slick-slider .slick-dots li.slick-active button:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.slick-slider .slick-dots li.slick-active button:focus,
+.slick-slider .slick-dots li.slick-active button:hover {
+  @apply bg-illuminating-dark;
+}
+
 
 .slick-slider .slick-dots li button:before {
   content: "";
