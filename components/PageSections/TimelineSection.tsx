@@ -270,6 +270,122 @@ export const TimelineSection = () => (
           </Heading>
         </div>
       </TimelineItem>
+      <TimelineItem month="May" day="09">
+        <div>
+          <Text color="black-40" leading="display" className="mb-03em">
+            Product highlight
+          </Text>
+          <Heading as="h3" size={3}>
+            Stanford sites lorem ipsum ⏰
+          </Heading>
+        </div>
+        <Paragraph variant="card" noMargin leading="snug">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </Paragraph>
+      </TimelineItem>
+      <TimelineItem month="May" day="23">
+        <Grid sm={2} gap="default">
+          <Paragraph size={1} weight="bold" noMargin leading="display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Paragraph>
+          <Paragraph variant="card" noMargin leading="snug">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </Paragraph>
+        </Grid>
+        <div>
+          <Text color="black-40" leading="display" className="mb-03em">
+            UX research
+          </Text>
+          <Heading as="h3" size={3}>
+            Innovation Program 🔦
+          </Heading>
+        </div>
+      </TimelineItem>
+
+      <TimelineItem month="Jun" day="02">
+        <div>
+          <Text color="black-40" leading="display" className="mb-03em">
+            Launch
+          </Text>
+          <Heading as="h3" size={3}>
+            ChEM-H launches 🎉
+          </Heading>
+        </div>
+        <Grid sm={2} gap="default">
+          <Paragraph variant="card" noMargin leading="snug">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Paragraph>
+          <Paragraph variant="card" noMargin leading="snug">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </Paragraph>
+        </Grid>
+      </TimelineItem>
+      <TimelineItem month="Nov" day="22">
+        <Grid sm={2} gap="default">
+          <Paragraph size={1} weight="bold" noMargin leading="display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Paragraph>
+          <Paragraph variant="card" noMargin leading="snug">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </Paragraph>
+        </Grid>
+        <div>
+          <Text color="black-40" leading="display" className="mb-03em">
+            Product highlight
+          </Text>
+          <Heading as="h3" size={3}>
+            Stanford Sites goes live on Drupal 10 🎉
+          </Heading>
+        </div>
+      </TimelineItem>
+      <TimelineItem month="Dec" day="11">
+        <div>
+          <Text color="black-40" leading="display" className="mb-03em">
+            UX Research
+          </Text>
+          <Heading as="h3" size={3}>
+            CSharpe begins user interviews 🔦
+          </Heading>
+        </div>
+
+        <Grid sm={2} gap="default">
+          <Paragraph size={1} weight="bold" noMargin leading="display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Paragraph>
+          <Paragraph variant="card" noMargin leading="snug">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </Paragraph>
+        </Grid>
+      </TimelineItem>
     </Timeline>
   </section>
 );
