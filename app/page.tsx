@@ -3,6 +3,8 @@ import { Grid } from '@/components/Grid';
 import { Heading, Paragraph, Text } from '@/components/Typography';
 import { IntroSection, ServiceCardsSection, TimelineSection } from '@/components/PageSections';
 import { ExperienceCardsSection } from '@/components/PageSections/ExperienceCardsSection';
+import ThankPartnersSection from '@/components/PageSections/ThankPartnersSection';
+import GoTeam from '@/components/PageSections/GoTeam';
 
 export default function Home() {
   return (
@@ -39,6 +41,8 @@ export default function Home() {
         <ServiceCardsSection />
         <ExperienceCardsSection />
         <TimelineSection />
+        <ThankPartnersSection />
+        <GoTeam />
       </div>
     </main>
   );
