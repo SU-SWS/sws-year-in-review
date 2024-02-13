@@ -5,7 +5,7 @@ import * as types from './TeamEmoji.types';
 
 interface TeamEmojiProps {
   color: types.SvgColor;
-  svgName: string;
+  svgName: types.TeamMap;
   text: string;
   className?: string;
 }
@@ -16,11 +16,11 @@ export default function TeamEmoji({
   text,
   className,
 }: TeamEmojiProps) {
-  const Svg = require(`../public/images/${svgName}.svg`).default;
+  const Svg = svgName ? styles.teamMap[svgName] : '';
 
   return (
     <div className={className}>
-      <Svg className={color && styles.svgColor[color]} />
+      {Svg && <Svg className={color && styles.svgColor[color]} />}
       <Paragraph>{text}</Paragraph>
     </div>
   );
