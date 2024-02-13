@@ -16,31 +16,34 @@ export const Card = ({
   as: AsComponent = 'div',
   className,
   children,
-  icon = 'user',
+  icon,
   iconColor,
   paddingType,
   ...rest
 }: CardProps) => {
-  const Icon = styles.iconMap[icon];
+  const Icon = icon ? styles.iconMap[icon] : '';
 
   return (
     <AsComponent
       {...rest}
       className={cnb(
-        'bg-black text-white rounded-[0.8rem]',
+        'bg-black rounded-[0.8rem]',
         paddingType ? styles.paddingType[paddingType] : '',
         className,
       )}
     >
-      {icon && (
+      {Icon && (
         <Icon
           className={cnb(
+            'rs-mb-2', 
             styles.iconBaseStyleDefault,
             iconColor ? styles.iconColor[iconColor] : '',
           )}
         />
       )}
-      {children}
+      <div className="children:text-white">
+        {children}
+      </div>
     </AsComponent>
   );
 };
