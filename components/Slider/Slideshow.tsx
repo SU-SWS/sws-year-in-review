@@ -3,10 +3,7 @@ import React, { useRef } from 'react';
 import Slider, { CustomArrowProps } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import {
-  ArrowLeftCircleIcon,
-  ArrowRightCircleIcon,
-} from '@heroicons/react/24/solid';
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 
 export type SlideshowProps = {
   children: React.ReactNode;
@@ -16,16 +13,16 @@ type SliderRef = Slider | null;
 
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
-    <button className="absolute top-1/3 right-1" onClick={onClick}>
-      <ArrowRightCircleIcon className="w-60 text-teal" />
+    <button className="absolute top-1/3 right-1 z-50" onClick={onClick}>
+      <ArrowRightIcon className="w-50 text-black-true bg-teal rounded-full p-10" />
     </button>
   );
 };
 
 const PrevArrow = ({ onClick }: CustomArrowProps) => {
   return (
-    <button className="absolute top-1/3 left-1" onClick={onClick}>
-      <ArrowLeftCircleIcon className="w-60 text-teal" />
+    <button className="absolute top-1/3 left-1 z-50" onClick={onClick}>
+      <ArrowLeftIcon className="w-50 text-black-true bg-teal rounded-full p-10" />
     </button>
   );
 };
