@@ -1,6 +1,6 @@
 'use client';
-import React, { useRef, useState } from 'react';
-import Slider, { Settings } from 'react-slick';
+import React, { useRef } from 'react';
+import Slider, { CustomArrowProps } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {
@@ -14,30 +14,42 @@ export type SlideshowProps = {
 
 type SliderRef = Slider | null;
 
-export default function Slideshow({ children }: SlideshowProps) {
+const NextArrow = ({ onClick }: CustomArrowProps) => {
+  return (
+    <button className="absolute top-1/3 right-1" onClick={onClick}>
+      <ArrowRightCircleIcon className="w-60 text-teal" />
+    </button>
+  );
+};
+
+const PrevArrow = ({ onClick }: CustomArrowProps) => {
+  return (
+    <button className="absolute top-1/3 left-1" onClick={onClick}>
+      <ArrowLeftCircleIcon className="w-60 text-teal" />
+    </button>
+  );
+};
+
+const Slideshow = ({ children }: SlideshowProps) => {
   const arrowRef = useRef<SliderRef | null>(null);
   const settings = {
     className: 'center',
     centerMode: true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows: false,
-    appendDots: (dots: any) => (
-      <div>
-        <ul>{dots}</ul>
-      </div>
-    ),
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode : false,
+          centerMode: false,
         },
       },
     ],
@@ -47,20 +59,8 @@ export default function Slideshow({ children }: SlideshowProps) {
       <Slider ref={arrowRef} {...settings}>
         {children}
       </Slider>
-      <div>
-        <button
-          className="absolute top-1/3 left-1"
-          onClick={() => arrowRef && arrowRef.current?.slickPrev()}
-        >
-          <ArrowLeftCircleIcon className="w-60 text-teal" />
-        </button>
-        <button
-          className="absolute top-1/3 right-1"
-          onClick={() => arrowRef && arrowRef.current?.slickNext()}
-        >
-        <ArrowRightCircleIcon className="w-60 text-teal" />
-        </button>
-      </div>
     </div>
   );
-}
+};
+
+export default Slideshow;
