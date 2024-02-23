@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import Slider, { CustomArrowProps } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/16/solid';
 
 export type SlideshowProps = {
   children: React.ReactNode;
