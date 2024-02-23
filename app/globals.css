@@ -10,6 +10,10 @@
   @apply rs-mx-1;
 }
 
+.slick-slide:not(.slick-current) p {
+  color: transparent;
+}
+
 @media (min-width: 992px) {
   .center .slick-slide.slick-active.slick-current {
     @apply z-50 transition-all duration-[400ms] ease-[ease-in-out] scale-[1.5] opacity-100 relative;
