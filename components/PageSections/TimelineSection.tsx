@@ -367,7 +367,7 @@ export const TimelineSection = () => (
             UX Research
           </Text>
           <Heading as="h3" size={3}>
-            CSharpe begins user interviews 🔦
+            c-ShARP begins user interviews 🔦
           </Heading>
         </div>
 
