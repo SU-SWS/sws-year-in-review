@@ -6,7 +6,7 @@ export default function GoTeam() {
   return (
     <section className="rs-mb-10">
       <Heading>
-        Our team looks forward to working with your&rsquo;s in{' '}
+        Our team looks forward to working with yours in{' '}
         <Text as='span' bgColor="illuminating" color="black-true" className="px-10 rounded-[0.8rem] text-black-true">
           2024.
         </Text>
