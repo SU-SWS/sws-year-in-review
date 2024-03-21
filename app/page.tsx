@@ -1,7 +1,13 @@
 import { Card } from '@/components/Card';
+import { SlideImage } from '@/components/Slider/SlideImage';
+import Slideshow from '@/components/Slider/Slideshow';
 import { Grid } from '@/components/Grid';
 import { Heading, Paragraph, Text } from '@/components/Typography';
-import { IntroSection, ServiceCardsSection, TimelineSection } from '@/components/PageSections';
+import {
+  IntroSection,
+  ServiceCardsSection,
+  TimelineSection,
+} from '@/components/PageSections';
 import { ExperienceCardsSection } from '@/components/PageSections/ExperienceCardsSection';
 import ThankPartnersSection from '@/components/PageSections/ThankPartnersSection';
 import GoTeam from '@/components/PageSections/GoTeam';
@@ -34,10 +40,26 @@ export default function Home() {
             Stanford, employing Storyblok, Lorem Ipsum, and our very own,
             Stanford Sites.
           </Paragraph>
-          <div className="h-400">
-            <Paragraph>Cards coming soon...</Paragraph>
-          </div>
         </div>
+      </div>
+      <div>
+        <Slideshow>
+          <SlideImage
+            src="/images/ChemH.png"
+            alt="ChemH Website"
+            caption="SWS launched a custom subtheme developed for Sarafan ChEM-H on Stanford Sites."
+          />
+          <SlideImage src="/images/DIR.png" alt="DIR Website" />
+          <SlideImage
+            src="/images/SUL.png"
+            alt="SUL Website"
+            caption="Stanford University Libraries new site features a decoupled front-end and a Drupal back-end."
+          />
+          <SlideImage src="/images/WGH.png" alt="WGH Website" />
+          <SlideImage src="/images/Techsource.png" alt="Tech Source Website" />
+        </Slideshow>
+      </div>
+      <div className="cc">
         <ServiceCardsSection />
         <ExperienceCardsSection />
         <TimelineSection />
