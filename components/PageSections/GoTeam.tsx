@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heading, Paragraph, Text } from '../Typography';
 import { Card } from '../Card';
+import TeamEmoji from '../TeamEmoji/TeamEmoji';
 
 export default function GoTeam() {
   return (
@@ -12,7 +13,8 @@ export default function GoTeam() {
         </Text>
       </Heading>
       <div className='rs-mb-3 rs-mt-1ß'>
-        Team SVGs here
+        <TeamEmoji color='teal' svgName='Ali' text='Ali' />
+        <TeamEmoji color='purple' svgName='Andy' text='Andy' />
       </div>
       <Card paddingType='small' className='rs-mt-5'>
         <Paragraph>
