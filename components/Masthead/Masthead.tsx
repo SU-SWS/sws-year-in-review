@@ -5,7 +5,7 @@ import { Container } from '@/components/Container';
 export const Masthead = () => {
 
   return (
-    <Container as="header" pt={5} pb={2} className={styles.root}>
+    <Container as="header" pt={2} pb={2} className={styles.root}>
       <LogoLockup text="Web Services" color="white" className={styles.lockup} />
     </Container>
   );

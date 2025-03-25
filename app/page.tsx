@@ -17,7 +17,7 @@ export default function Home() {
     <main className="bg-black-true text-white">
       <IntroSection />
       <div className="cc">
-        <div className="max-w-prose">
+        <div id="main-content" className="max-w-prose">
           <Heading
             as="h2"
             size={6}
