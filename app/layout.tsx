@@ -1,11 +1,12 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import { cnb } from 'cnbuilder';
-import './globals.css';
 import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
 import localFont from 'next/font/local';
 import { FlexBox } from '@/components/FlexBox';
 import { Masthead } from '@/components/Masthead';
 import { GlobalFooter } from '@/components/GlobalFooter';
+import './globals.css';
 
 const source_sans = Source_Sans_3({
   subsets: ['latin'],
