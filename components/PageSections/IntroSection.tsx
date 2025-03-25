@@ -4,7 +4,7 @@ import { ArrowDownIcon } from '@heroicons/react/16/solid';
 export const IntroSection = () => (
   <section className="rs-mt-8 rs-mb-10 h-full cc">
     <div className="relative">
-    <div className="max-w-[110rem]">
+    <div className="max-w-[120rem]">
       <Heading as="h1" size={8} leading="tight" className="rs-mb-2">
         2023 Year in review.
       </Heading>
