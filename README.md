@@ -1,13 +1,8 @@
 # SWS Year In Review
 
-This project aims to create a comprehensive year-end review website for SWS (Stanford Web Services) using Next.js and MDX to showcase achievements, statistics, and a timeline of events throughout the year.
-
 ## Overview
 
-The SWS Year In Review website is designed to encapsulate the accomplishments, key metrics, and significant events of the year. It offers a single-page interface divided into several sections:
-
-- Additional information to come
-- ...
+This project aims to create a comprehensive year-end review website for SWS (Stanford Web Services) using Next.js to showcase achievements, statistics, and a timeline of events throughout the year.
 
 ## Getting Started
 
@@ -18,6 +13,47 @@ To run the project locally, follow these steps:
 3. Install dependencies using `npm install`.
 4. Start the development server with `npm run dev`.
 5. Access the website at http://localhost:3000.
+
+## Features
+
+- Built with Next.js for server-side rendering and static site generation.
+- Responsive design to ensure compatibility across devices.
+- Dynamic timeline showcasing key events.
+- Interactive charts and statistics to highlight achievements.
+
+## Project Structure
+
+The repository is organized as follows:
+
+```
+/components   - Reusable React components
+/pages        - Next.js pages
+/public       - Static assets (images, icons, etc.)
+/styles       - Global and component-specific styles
+/data         - JSON/MDX files for content and data
+```
+
+## Scripts
+
+The following scripts are available:
+
+- `npm run dev` - Start the development server.
+- `npm run build` - Build the project for production.
+- `npm run start` - Start the production server.
+- `npm run lint` - Run ESLint to check for code quality issues.
+
+## Prerequisites
+
+- Node.js (v20 or higher)
+- npm or yarn
+- nvm (optional, for managing Node.js versions)
+
+## Deployment
+
+This project is configured for deployment on Netlify. To deploy:
+
+1. Push your changes to the main branch.
+2. Netlify will automatically build and deploy the latest version.
 
 ## Contribution / Collaboration
 

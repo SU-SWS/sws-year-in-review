@@ -40,24 +40,14 @@ export const TimelineSection = () => (
       </TimelineItem>
       <TimelineItem month="Feb" day="01">
         <div />
-        <FlexBox alignItems="start" className="gap-x-18">
-          <Image
-            unoptimized
-            src="images/Andy-bell_white.svg"
-            width={75}
-            height={87}
-            alt=""
-            className="shrink-0 mt-10"
-          />
-          <div>
-            <Text color="black-40" leading="display" className="mb-03em">
-              SWS Team
-            </Text>
-            <Heading as="h3" size={1}>
-              Andy Bell joins SWS as a Senior Web Project Manager!
-            </Heading>
-          </div>
-        </FlexBox>
+        <div>
+          <Text color="black-40" leading="display" className="mb-03em">
+            SWS Team
+          </Text>
+          <Heading as="h3" size={1}>
+            New Member joins SWS as a Senior Web Project Manager!
+          </Heading>
+        </div>
       </TimelineItem>
       <TimelineItem month="Mar" day="10">
         <div>
@@ -113,29 +103,19 @@ export const TimelineSection = () => (
         </div>
       </TimelineItem>
       <TimelineItem month="Mar" day="20">
-        <FlexBox alignItems="start" className="gap-x-18">
-          <div>
-            <Text
-              align="right"
-              color="black-40"
-              leading="display"
-              className="mb-03em"
-            >
-              SWS Team
-            </Text>
-            <Heading align="right" as="h3" size={1}>
-              Ali Krogman joins SWS as a Senior Web Project Manager!
-            </Heading>
-          </div>
-          <Image
-            unoptimized
-            src="images/Ali-krogman_white.svg"
-            width={75}
-            height={87}
-            alt=""
-            className="shrink-0 mt-10"
-          />
-        </FlexBox>
+        <div>
+          <Text
+            align="right"
+            color="black-40"
+            leading="display"
+            className="mb-03em"
+          >
+            SWS Team
+          </Text>
+          <Heading align="right" as="h3" size={1}>
+            New Member joins SWS as a Senior Web Project Manager!
+          </Heading>
+        </div>
         <div />
       </TimelineItem>
       <TimelineItem month="Mar" day="25">

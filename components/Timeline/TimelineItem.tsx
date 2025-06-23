@@ -1,6 +1,6 @@
 'use client';
 import { HTMLAttributes, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView } from 'motion/react';
 import { cnb } from 'cnbuilder';
 import { Grid } from '../Grid/Grid';
 
