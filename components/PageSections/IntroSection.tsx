@@ -6,7 +6,7 @@ export const IntroSection = () => (
     <div className="relative">
     <div className="max-w-[120rem]">
       <Heading as="h1" size={8} leading="tight" className="rs-mb-2">
-        2023 Year in review.
+        2025 Year in review.
       </Heading>
       <Paragraph weight="semibold" size={4} leading="display" color="black-50">
         We took on{' '}
@@ -25,7 +25,7 @@ export const IntroSection = () => (
         <Text as="span" color="white">
           share some of projects and people
         </Text>{' '}
-        that made 2023 a special year for{' '}
+        that made 2025 a special year for{' '}
         <Text as="span" color="white">
           Stanford Web Services
         </Text>

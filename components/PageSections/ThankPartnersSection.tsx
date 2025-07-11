@@ -99,7 +99,7 @@ export default function ThankPartnersSection() {
           >
             all of our partners
           </Text>{' '}
-          in 2023.
+          in 2025.
         </Heading>
         <Grid sm={1} md={2} lg={3} gap="default" className="rs-mt-6">
           {Object.values(clients).map((column, index) => (

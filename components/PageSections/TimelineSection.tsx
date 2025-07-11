@@ -16,7 +16,7 @@ export const TimelineSection = () => (
       >
         day
       </Text>{' '}
-      in 2023...
+      in 2025...
     </Heading>
     <Timeline className="rs-py-10 rs-mb-10">
       <TimelineItem month="Jan" day="10">
