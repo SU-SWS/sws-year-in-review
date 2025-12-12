@@ -15,7 +15,7 @@
     "cnbuilder": "^3.1.0",
     "decanter": "^7.3.1",
     "motion": "^12.4.7",
-    "next": "15.2.4",
+    "next": "15.4.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-slick": "^0.30.3",
